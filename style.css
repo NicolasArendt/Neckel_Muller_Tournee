@@ -1,29 +1,32 @@
 body {
-  padding: 0 30px 0 30px;
+  padding: 0px 0 0px;
 }
 
 button {
-  font-size: 16px;
-  padding: 8px;
+  font-size: 25px;
+  padding: 15px;
+  margin-bottom: 25px;
+  margin-right: 500px;
+  background-color: gold;
 }
 
-.redButton{
-  background-color: pink;
-}
-.greenButton{
-  background-color: lightgreen;
-}
-.blueButton{
-  background-color: lightblue;
-}
-.yellowButton{
-  background-color: yellow;
-}
 
-table, th, td {
-  border: 1px solid black;
 }
+.picture{
+  text-align: center;
+  margin-left: 500px;
 
+}
+.title{
+  font-size: 45px;
+
+}
+.title2{
+  font-size: 25px;
+
+}
 table {
-  margin-top: 15px; 
+  margin-left : auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
