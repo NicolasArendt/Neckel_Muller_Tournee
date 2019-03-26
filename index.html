@@ -13,7 +13,18 @@
         document.getElementById('bigpic').style.display='block';
 
         }
-
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "Tournee Counter: " + localStorage.clickcount;
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+        }
 
 
     </script>
@@ -36,7 +47,9 @@
 
 <h1 class="title2">  Push the Button and have a beer with Neckel </h1>
 
-  <button  onclick="picture()"; >Neckel Muller Tournee</button>
+  <button  onclick="picture();clickCounter()" >Neckel Muller Tournee</button>
+  <div id="result" class="result">
+  </div>
         <img id="bigpic" src="bigpic" class="picture" style="display:none;" width="30%" />
 
 
